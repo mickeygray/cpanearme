@@ -1,9 +1,30 @@
 import StickyNavbar from "../../components/StickyNavbar"
 
 import BlogItem from "../../components/BlogItem"
-import {useState} from "react"
-const TaxFaqs = () => {
 
+const TaxFaqs = ({blogs}) => {
+
+
+
+
+    return (
+        <div>
+            <StickyNavbar />
+            <div className="container all-center">
+            <h3>Tax FAQS:</h3>
+  
+            Our blog is updated monthly with a hand full of new issues related to accounting and taxes. <br/>Take a moment to review some of our most recent entries.  
+
+            {blogs.map(blog =>(<BlogItem blog={blog} key={blog.title}/>))}
+            </div>
+
+        </div>
+    )
+}
+
+export default TaxFaqs
+
+export async function getStaticProps() {
 const blogs = [{
     title: "State Tax Changes For 2021",
     date: "1/11/2020",
@@ -377,21 +398,9 @@ const blogs = [{
                     allow you to be more informed if you contact a tax relief firm to help you with trying to negotiate a settlement.</p>`
           }]
 
-
-
-    return (
-        <div>
-            <StickyNavbar />
-            <div className="container all-center">
-            <h3>Tax FAQS:</h3>
-  
-            Our blog is updated monthly with a hand full of new issues related to accounting and taxes. <br/>Take a moment to review some of our most recent entries.  
-
-            {blogs.map(blog =>(<BlogItem blog={blog} key={blog.title}/>))}
-            </div>
-
-        </div>
-    )
+  return {
+    props: {
+      blogs,
+    },
+  }
 }
-
-export default TaxFaqs

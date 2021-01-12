@@ -3,8 +3,33 @@ import UsMap from "../../components/UsMap"
 import {useState} from "react"
 import Footer from "../../components/Footer"
 
-const Home = () => {
-  const [firms,setFirms] = useState([
+const Home = ({firms}) => {
+
+
+const [,setFirms] = useState(firms)
+
+  return (
+    <div>
+      <StickyNavbar/>
+      <div className='bg-primary'>      
+    <h3 className='text-center lead'>Click your state to load national and local firms that serve your tax and accounting needs</h3>
+      <UsMap firms={firms} setFirms={setFirms}/>
+    
+      
+    
+      </div>
+      <Footer />
+    </div>
+
+  )
+}
+
+export default Home
+
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const firms = [
   {
     name: "Nationwide Tax Experts",
     website: "https://www.ntetax.com",
@@ -133,24 +158,12 @@ const Home = () => {
     bbb: "https://www.bbb.org/us/ca/huntington-beach/profile/tax-consultant/nationwide-tax-experts-inc-1126-100075576",
     reviews: [{reviewer:"Steve Dingle", date:'1/1/2020', review: "Love Dat!",pic:"/stevedingle.jpeg"}, {reviewer: "Bang Dang", date:'1/1/2020', review: "Hate Dat!",pic:"/bangdang.jpg"}],
   },
-])
-
-
-
-  return (
-    <div>
-      <StickyNavbar/>
-      <div className='bg-primary'>      
-    <h3 className='text-center lead'>Click your state to load national and local firms that serve your tax and accounting needs</h3>
-      <UsMap firms={firms} setFirms={setFirms}/>
-    
-      
-    
-      </div>
-      <Footer />
-    </div>
-
-  )
+]
+  // By returning { props: posts }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      firms,
+    },
+  }
 }
-
-export default Home

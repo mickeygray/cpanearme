@@ -3,7 +3,7 @@ import Footer from "../../components/Footer"
 import Image from "next/image"
 
 
-const index = () => {
+const About = () => {
     return (
         <div>
            <StickyNavbar/>
@@ -34,4 +34,4 @@ const index = () => {
     )
 }
 
-export default index
+export default About
