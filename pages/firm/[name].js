@@ -15,8 +15,7 @@ const firm = JSON.parse(props.router.query.data)
             <div className='container ' style={{backgroundColor:'#b0bec5'}}>
                 <h3 className='text-primary'>{firm.name}</h3>
                 <i>Founded {firm.years} ago</i>
-                <span style={{float:'right'}}> <Link href='/home'><a className='btn btn-sm btn-dark'>Back Home</a></Link> 
-                </span>
+     
                 <div className="grid-3a">
                     <div className="card p-3">
                         Conact Info:<br/>  

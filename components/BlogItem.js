@@ -10,7 +10,7 @@ const BlogItem = ({blog}) => {
         <div style={{width:'700px'}}className='card bg-light grid-2'>
           <div> <h3><a onClick={() => {
         router.push({
-          pathname: `/${blog.title}`,
+          pathname: `/taxfaqs/${blog.title}`,
           query: { data: JSON.stringify(blog)},
         })
       }}>{blog.title}</a></h3> <h5><i>{blog.date}</i></h5></div>

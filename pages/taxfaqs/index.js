@@ -4,8 +4,7 @@ import BlogItem from "../../components/BlogItem"
 import {useState} from "react"
 const TaxFaqs = () => {
 
-const [blogs] = useState([
-    {
+const blogs = [{
     title: "State Tax Changes For 2021",
     date: "1/11/2020",
     img1:"/StateTaxChanges1.jpg",
@@ -376,7 +375,7 @@ const [blogs] = useState([
                     online, and it’s very simple to create an account to handle all your transactions. You can even             
                     make your payments online and set up an automatic payment plan if you wish. This will also
                     allow you to be more informed if you contact a tax relief firm to help you with trying to negotiate a settlement.</p>`
-          }])
+          }]
 
 
 
@@ -386,7 +385,7 @@ const [blogs] = useState([
             <div className="container all-center">
             <h3>Tax FAQS:</h3>
   
-            Our blog is updated monthly with a hand full of new issues related to accounting and taxes. Take a moment to review some of our most recent entries.  
+            Our blog is updated monthly with a hand full of new issues related to accounting and taxes. <br/>Take a moment to review some of our most recent entries.  
 
             {blogs.map(blog =>(<BlogItem blog={blog} key={blog.title}/>))}
             </div>

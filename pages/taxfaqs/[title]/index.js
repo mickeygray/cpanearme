@@ -1,12 +1,18 @@
 import { withRouter } from 'next/router'
 import parse from "html-react-parser"
-import StickyNavbar from "../../components/StickyNavbar"
-import Footer from "../../components/Footer"
+import StickyNavbar from "../../../components/StickyNavbar"
+import Footer from "../../../components/Footer"
 import Image from "next/image"
 
 const BlogPage = props => {
 
-    const blog = JSON.parse(props.router.query.data)
+let blog
+
+ if(props){
+blog = JSON.parse(props.router.query.data) 
+ }
+
+
 
     return (
         <div>

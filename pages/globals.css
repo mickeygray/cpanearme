@@ -839,7 +839,8 @@ table th {
   display: flex;
 }
 
-.navbar a {
+.footer a {
+  color: #fff;
   padding: 0.45rem;
   margin: 0 0.25rem;
 }
@@ -859,6 +860,9 @@ table th {
     display: none;
   }
   .grid-2,
+  .grid-2a,
+  .grid-2b,
+  .grid-2c,
   .grid-3,
   .grid-4 {
     grid-template-columns: 1fr;

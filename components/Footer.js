@@ -1,7 +1,7 @@
 import Link from "next/link"
 const Footer = () => {
     return (
-        <div className='bg-dark navbar'>
+        <div className='bg-dark navbar footer'>
           <h5>CPANearMe.com</h5>
          <ul>
            <li className='py-3'> <Link href='/taxfaqs'><a style={{color:'white'}}>Tax Faqs</a></Link> </li>
