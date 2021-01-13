@@ -1,7 +1,7 @@
-import StickyNavbar from "../../components/StickyNavbar"
-import UsMap from "../../components/UsMap"
+import StickyNavbar from "../components/StickyNavbar"
+import UsMap from "../components/UsMap"
 import {useState} from "react"
-import Footer from "../../components/Footer"
+import Footer from "../components/Footer"
 import fs from 'fs'
 import path from 'path'
 
