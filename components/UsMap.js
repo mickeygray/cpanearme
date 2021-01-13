@@ -2,7 +2,9 @@ import {useState,useEffect, useCallback} from 'react'
 import USAMap from "react-usa-map";
 import ConsultForm from './ConsultForm';
 import ListItem from './ListItem';
-const UsMap = ({firms,setFirms}) => {
+const UsMap = ({firmList,setFirms}) => {
+
+
 
 
 const [modalState, setModalState] = useState(false)
@@ -22,7 +24,7 @@ useEffect(() => {
 const mapHandler = (event) => {
     setModalState(prevState => !prevState) 
    
-    setFirms(firms.filter(firm => firm.states.includes(event.target.dataset.name)))
+    setFirms(firmList.filter(firm => firm.states.includes(event.target.dataset.name)))
 }
 
 
@@ -44,7 +46,7 @@ const mapHandler = (event) => {
     
         </div>
                 <div className ='container py-3 bg-primary'>
-           {modalState ? firms.map(firm =>(
+           {modalState ? firmList.map(firm =>(
 <ListItem firm={firm} key={firm.name}/>
       )) : ''}
         </div>
