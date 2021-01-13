@@ -52,7 +52,7 @@ if (process.browser) {
     <div onScroll={onScroll} style={style}>
    
    <div className="grid-2a">
-     <div className="p-1">     <Link href="/home"><Image
+     <div className="p-1">     <Link href="/"><Image
           onClick={onClick}
             src={style.background=== "black" ? "/logo2.png" : "/logo.png"}
             alt='Find Nationally Rated CPA Firms Near Me'
