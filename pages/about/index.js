@@ -14,7 +14,27 @@ const About = () => {
 
                     <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo aperiam totam dolores molestias corporis! Magnam quibusdam laboriosam obcaecati dolorem, illum, ullam et, recusandae laudantium commodi voluptatem porro. Ducimus corrupti cumque iste consequuntur architecto quam atque voluptatibus nostrum, ipsam ipsum, excepturi non accusantium corporis repellat aliquam tempore libero earum porro debitis? </p> 
                    
-                     <div className='all-center'> <Image src="/about.jpg" alt='professional tax help and advice' height='200px' width='200px' />  </div>  
+                     <div className='grid-2'> <div><input
+              type='text'
+              name='fullName'
+              placeholder='Full Name'
+          
+            />
+            <input
+              type='text'
+              name='email'
+              placeholder='e-mail'
+     
+            />
+            <input
+              type='text'
+              name='phone'
+              placeholder='Phone Number'
+
+            />
+            <textarea />
+            <button className='btn btn-dark'> Leave A Message </button>
+            </div> <div><Image src="/about.jpg" alt='professional tax help and advice' height='200px' width='200px' /> </div>  </div>  
                    </div>
 
                    <div>

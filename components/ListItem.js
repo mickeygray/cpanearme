@@ -42,7 +42,7 @@ const router = useRouter()
             <a className='lead'
       onClick={() => {
         router.push({
-          pathname: `/firm/${firm.name}`,
+          pathname: `/firm/${firm.id}`,
           query: { data: JSON.stringify(firm)},
         })
       }}
