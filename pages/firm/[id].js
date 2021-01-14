@@ -6,7 +6,7 @@ import ReviewItem from "../../components/ReviewItem"
 import Footer from '../../components/Footer'
 import path from "path"
 import fs from "fs"
-
+import {Head} from "next/document"
 const Profile = ({firm}) => {
 
 
@@ -18,6 +18,13 @@ const Profile = ({firm}) => {
     return ( 
         
         <div>
+      <Head>
+        <title>CPA Near Me - Top Rated CPAs serving your state.</title>
+        <link rel="canonical" href="http://CPANearMe.org/" />
+        <meta name="robots" content="index, follow"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"></meta> 
+        <meta name="description" content="Free In depth recommendations for CPAs and Tax Attorneys. Find your next accountant. "/>
+      </Head>
             <StickyNavbar/>
 
          

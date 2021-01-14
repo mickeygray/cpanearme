@@ -61,7 +61,7 @@ if (process.browser) {
               height= "100px"
          
  
-          /></Link>  </div>
+          /></Link> <h5>CPA Near Me</h5>  </div>
      <div >        <ul className='navbar'>
         <li className='py-3'> <Link href='/taxfaqs'><a style={{display:'block', borderRadius:'10px'}} className={style.background === "black" ? "btn btn-light" : 'btn btn-dark'}>Tax Faqs</a></Link> </li>
         <li className='py-3'> <Link href='/taxfiling'><a style={{display:'block',borderRadius:'10px'}} className={style.background === "black" ? "btn btn-light" : 'btn btn-dark'}>Tax Filing Seminar</a></Link> </li>

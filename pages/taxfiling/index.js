@@ -1,6 +1,7 @@
 import StickyNavbar from "../../components/StickyNavbar"
 import YouTube from "react-youtube"
 import Image from "next/image"
+import {Head} from "next/document" 
 const TaxHelp = () => {
 const opts = {
               height: '350',
@@ -13,6 +14,13 @@ const opts = {
   };
     return (
         <div>
+                  <Head>
+        <title>CPA Near Me - Top Rated CPAs serving your state.</title>
+        <link rel="canonical" href="http://CPANearMe.org/" />
+        <meta name="robots" content="index, follow"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"></meta> 
+        <meta name="description" content="Free In depth recommendations for CPAs and Tax Attorneys. Find your next accountant. "/>
+      </Head>
             <StickyNavbar/>
   <div className='container'>
       <div className='my-1'>
