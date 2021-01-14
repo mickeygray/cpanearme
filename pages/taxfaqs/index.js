@@ -2,7 +2,7 @@ import StickyNavbar from "../../components/StickyNavbar"
 import BlogItem from "../../components/BlogItem"
 import fs from 'fs'
 import path from 'path'
-import {Head} from 'next/document'
+
 
 const TaxFaqs = ({blogs}) => {
 
@@ -11,13 +11,7 @@ const entries = blogs[0].blogs
 
     return (
         <div>
-                          <Head>
-        <title>CPA Near Me - Top Rated CPAs serving your state.</title>
-        <link rel="canonical" href="http://CPANearMe.org/" />
-        <meta name="robots" content="index, follow"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"></meta> 
-        <meta name="description" content="Free In depth recommendations for CPAs and Tax Attorneys. Find your next accountant. "/>
-      </Head>
+
             <StickyNavbar />
             <div className="container all-center">
             <h3>Tax FAQS:</h3>

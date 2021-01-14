@@ -1,18 +1,12 @@
 import StickyNavbar from "../../components/StickyNavbar"
 import Image from "next/image"
 import Footer from "../../components/Footer"
-import {Head} from "next/document"
+
 
 const TaxCompanies = () => {
     return (
         <div>
-      <Head>
-        <title>CPA Near Me - Top Rated CPAs serving your state.</title>
-        <link rel="canonical" href="http://CPANearMe.org/" />
-        <meta name="robots" content="index, follow"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"></meta> 
-        <meta name="description" content="Free In depth recommendations for CPAs and Tax Attorneys. Find your next accountant. "/>
-      </Head>
+
             <StickyNavbar />
             <div className="container">
                 <h3>Ten Questions to Ask When Finding the CPA, Tax Preparer or Attorney That is Best For You</h3>
